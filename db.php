@@ -6,7 +6,7 @@ function banco($sql) {
    }
 $resultado = pg_query($sql);
 if(!$resultado) {
-    die ("Erro: " . pg_result_error($conn));
+    die ("Erro: " . pg_result_error($resultado));
 }
 pg_close($conn); 
 return $resultado;
