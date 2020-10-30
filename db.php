@@ -4,11 +4,11 @@ function banco($sql) {
    if(!$conn) {
        die ("Erro: " . pg_result_error($conn));
    }
-$resultado = pg_query($sql)
+$resultado = pg_query($sql);
 if(!$resultado) {
     die ("Erro: " . pg_result_error($conn));
 }
-pg_close($conn) 
+pg_close($conn); 
 return $resultado;
 }
 ?>
