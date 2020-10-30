@@ -1,6 +1,6 @@
 <?php
 function banco($sql) {
- $CONN = pg_connect(getenv('DATABASE_URL'));
+ $conn = pg_connect(getenv('DATABASE_URL'));
    if(!$conn) {
        die ("Erro: " . pg_result_error($conn));
    }
