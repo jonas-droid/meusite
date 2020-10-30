@@ -1,5 +1,5 @@
 <?php
-define("TBUSUARIO", "usuario";)
+define("TBUSUARIO", "usuario");
 
 
 require("db.php");
